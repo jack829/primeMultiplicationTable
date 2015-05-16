@@ -2,7 +2,7 @@
 def listPrimes n
   sieve = []
   current = 2
-  until sieve.length == n
+  until sieve.length == n 
     if isPrime current
       sieve.push(current)
       current += 1
@@ -23,7 +23,7 @@ def isPrime num
 end
 
 # make multiplication table
-def primeTable (n)
+def primeTable n=10
   x = y = listPrimes n
   print '     '
   x.each {|i| print "%-3d  " % i}
@@ -38,5 +38,4 @@ def primeTable (n)
   end
 end
 
-
-
+primeTable 4
